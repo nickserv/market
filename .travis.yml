@@ -1,4 +1,6 @@
-after_install: yarn --frozen-lockfile
+install:
+  - bundle install --jobs=3 --retry=3
+  - yarn --frozen-lockfile
 cache:
   bundler: true
   yarn: true
