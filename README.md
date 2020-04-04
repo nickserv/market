@@ -1,5 +1,7 @@
 # README
 
+[![Build Status](https://travis-ci.com/nickmccurdy/marketplace.svg?token=2YpiqRLGxdsv1ho7eXeu&branch=master)](https://travis-ci.com/nickmccurdy/marketplace)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
