@@ -1,4 +1,4 @@
-before_install: nvm install
+before_install: nvm install node
 install:
   - bundle install --jobs=3 --retry=3
   - yarn --frozen-lockfile
