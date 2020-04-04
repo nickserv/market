@@ -1,2 +1,2 @@
 cache: bundler
-script: rake test test:system
+script: bundle exec rake test test:system
