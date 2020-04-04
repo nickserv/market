@@ -1,1 +1,3 @@
-cache: bundler
+cache:
+  bundler: true
+  directories: /home/travis/.rvm/
