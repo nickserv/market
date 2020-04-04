@@ -16,6 +16,8 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create player" do
+    Player.destroy_all
+
     assert_difference('Player.count') do
       post players_url, params: { player: { friend_code: @player.friend_code, island: @player.island, name: @player.name, nickname: @player.nickname } }
     end

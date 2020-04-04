@@ -1,13 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  island: MyString
-  name: MyString
-  nickname: MyString
-  friend_code: MyString
-
-two:
-  island: MyString
-  name: MyString
-  nickname: MyString
-  friend_code: MyString
+  island: Manhattan
+  name: Anita
+  nickname: Rita
+  friend_code: SW-1231-2312-3123
