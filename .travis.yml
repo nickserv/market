@@ -1,1 +1,4 @@
-cache: bundler
+after_install: yarn --frozen-lockfile
+cache:
+  bundler: true
+  yarn: true
