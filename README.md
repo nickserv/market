@@ -1,6 +1,8 @@
-# README
+# New Horizons Marketplace
 
 [![Build Status](https://travis-ci.com/nickmccurdy/marketplace.svg?token=2YpiqRLGxdsv1ho7eXeu&branch=master)](https://travis-ci.com/nickmccurdy/marketplace)
+
+Trading service for [Animal Crossing: New Horizons](https://www.animal-crossing.com/new-horizons/)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
