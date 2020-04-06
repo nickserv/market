@@ -1,6 +1,6 @@
 # New Horizons Market
 
-[![Build Status](https://travis-ci.com/nickmccurdy/marketplace.svg?token=2YpiqRLGxdsv1ho7eXeu&branch=master)](https://travis-ci.com/nickmccurdy/marketplace)
+[![Build Status](https://travis-ci.com/nickmccurdy/market.svg?token=2YpiqRLGxdsv1ho7eXeu&branch=master)](https://travis-ci.com/nickmccurdy/market)
 
 Trading service for [Animal Crossing: New Horizons](https://www.animal-crossing.com/new-horizons/)
 
