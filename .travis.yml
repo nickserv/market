@@ -6,3 +6,4 @@ cache:
   bundler: true
   yarn: true
   directories: /home/travis/.rvm/
+script: bundle exec rake test test:system
