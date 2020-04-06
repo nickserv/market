@@ -1,5 +1,5 @@
 {
-  "name": "marketplace",
+  "name": "market",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
