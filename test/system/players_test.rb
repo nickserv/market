@@ -16,6 +16,7 @@ class PlayersTest < ApplicationSystemTestCase
     visit players_url
     click_on "New Player"
 
+    fill_in "Dodo code", with: @player.dodo_code
     fill_in "Friend code", with: @player.friend_code
     fill_in "Island", with: @player.island
     fill_in "Name", with: @player.name
@@ -30,6 +31,7 @@ class PlayersTest < ApplicationSystemTestCase
     visit players_url
     click_on "Edit", match: :first
 
+    fill_in "Dodo code", with: @player.dodo_code
     fill_in "Friend code", with: @player.friend_code
     fill_in "Island", with: @player.island
     fill_in "Name", with: @player.name

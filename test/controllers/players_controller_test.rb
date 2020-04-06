@@ -19,7 +19,7 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
     Player.destroy_all
 
     assert_difference('Player.count') do
-      post players_url, params: { player: { friend_code: @player.friend_code, island: @player.island, name: @player.name, nickname: @player.nickname } }
+      post players_url, params: { player: { dodo_code: @player.dodo_code, friend_code: @player.friend_code, island: @player.island, name: @player.name, nickname: @player.nickname } }
     end
 
     assert_redirected_to player_url(Player.last)
@@ -36,7 +36,7 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update player" do
-    patch player_url(@player), params: { player: { friend_code: @player.friend_code, island: @player.island, name: @player.name, nickname: @player.nickname } }
+    patch player_url(@player), params: { player: { dodo_code: @player.dodo_code, friend_code: @player.friend_code, island: @player.island, name: @player.name, nickname: @player.nickname } }
     assert_redirected_to player_url(@player)
   end
 
