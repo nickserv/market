@@ -1,4 +1,4 @@
-# New Horizons Market
+# [New Horizons Market](https://nhmarket.herokuapp.com/)
 
 [![Build Status](https://travis-ci.com/nickmccurdy/market.svg?token=2YpiqRLGxdsv1ho7eXeu&branch=master)](https://travis-ci.com/nickmccurdy/market)
 
