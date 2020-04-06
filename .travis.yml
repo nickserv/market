@@ -1,3 +1,5 @@
+services: postgresql
 cache:
   bundler: true
   directories: /home/travis/.rvm/
+before_script: psql -c 'create database market_test;' -U postgres
