@@ -11,6 +11,8 @@ class PlayersTest < ApplicationSystemTestCase
   end
 
   test "creating a Player" do
+    Player.destroy_all
+
     visit players_url
     click_on "New Player"
 
