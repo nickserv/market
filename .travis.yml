@@ -1,3 +1,4 @@
+services: postgresql
 before_install: nvm install node
 install:
   - bundle install --jobs=3 --retry=3
@@ -6,6 +7,7 @@ cache:
   bundler: true
   yarn: true
   directories: /home/travis/.rvm/
+before_script: psql -c 'create database market_test;' -U postgres
 script:
   - bundle exec rake
   - bundle exec rake test:system
