@@ -1,5 +1,5 @@
 services: postgresql
-before_script: psql -c 'create database marketplace_test;' -U postgres
 cache:
   bundler: true
   directories: /home/travis/.rvm/
+before_script: psql -c 'create database marketplace_test;' -U postgres
