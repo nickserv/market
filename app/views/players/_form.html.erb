@@ -33,7 +33,7 @@
 
   <div class="field">
     <%= form.label :dodo_code %>
-    <%= form.text_field :dodo_code %>
+    <%= form.text_field :dodo_code %> <%= format_dodo_code_created_at player.dodo_code_created_at %>
   </div>
 
   <div class="actions">

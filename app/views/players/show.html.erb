@@ -22,7 +22,7 @@
 
 <p>
   <strong>Dodo code:</strong>
-  <%= @player.dodo_code %>
+  <%= @player.dodo_code %> <%= format_dodo_code_created_at @player.dodo_code_created_at %>
 </p>
 
 <%= link_to 'Edit', edit_player_path(@player) %> |
