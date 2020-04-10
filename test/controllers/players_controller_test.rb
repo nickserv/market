@@ -5,17 +5,17 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
     @player = players(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get players_url
     assert_response :success
   end
 
-  test "should get new" do
+  test 'should get new' do
     get new_player_url
     assert_response :success
   end
 
-  test "should create player" do
+  test 'should create player' do
     Player.destroy_all
 
     assert_difference('Player.count') do
@@ -25,22 +25,22 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to player_url(Player.last)
   end
 
-  test "should show player" do
+  test 'should show player' do
     get player_url(@player)
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
     get edit_player_url(@player)
     assert_response :success
   end
 
-  test "should update player" do
+  test 'should update player' do
     patch player_url(@player), params: { player: { dodo_code: @player.dodo_code, friend_code: @player.friend_code, island: @player.island, name: @player.name, nickname: @player.nickname } }
     assert_redirected_to player_url(@player)
   end
 
-  test "should destroy player" do
+  test 'should destroy player' do
     assert_difference('Player.count', -1) do
       delete player_url(@player)
     end
