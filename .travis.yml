@@ -9,5 +9,5 @@ cache:
   directories: /home/travis/.rvm/
 before_script: psql -c 'create database market_test;' -U postgres
 script:
-  - bin/rake
-  - bin/rake test:system
+  - rake
+  - rake test:system
