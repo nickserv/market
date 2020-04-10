@@ -7,7 +7,7 @@ class PlayersTest < ApplicationSystemTestCase
 
   test "visiting the index" do
     visit players_url
-    assert_selector "h1", text: "Players"
+    assert_selector "h2", text: "Players"
   end
 
   test "creating a Player" do
