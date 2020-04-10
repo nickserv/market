@@ -28,11 +28,15 @@ class PlayersController < ApplicationController
 
     respond_to do |format|
       if @player.save
-        format.html { redirect_to @player, notice: 'Player was successfully created.' }
+        format.html do
+          redirect_to @player, notice: 'Player was successfully created.'
+        end
         format.json { render :show, status: :created, location: @player }
       else
         format.html { render :new }
-        format.json { render json: @player.errors, status: :unprocessable_entity }
+        format.json do
+          render json: @player.errors, status: :unprocessable_entity
+        end
       end
     end
   end
@@ -42,11 +46,15 @@ class PlayersController < ApplicationController
   def update
     respond_to do |format|
       if @player.update(player_params)
-        format.html { redirect_to @player, notice: 'Player was successfully updated.' }
+        format.html do
+          redirect_to @player, notice: 'Player was successfully updated.'
+        end
         format.json { render :show, status: :ok, location: @player }
       else
         format.html { render :edit }
-        format.json { render json: @player.errors, status: :unprocessable_entity }
+        format.json do
+          render json: @player.errors, status: :unprocessable_entity
+        end
       end
     end
   end
@@ -56,7 +64,9 @@ class PlayersController < ApplicationController
   def destroy
     @player.destroy
     respond_to do |format|
-      format.html { redirect_to players_url, notice: 'Player was successfully destroyed.' }
+      format.html do
+        redirect_to players_url, notice: 'Player was successfully destroyed.'
+      end
       format.json { head :no_content }
     end
   end
@@ -70,6 +80,7 @@ class PlayersController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def player_params
-    params.require(:player).permit(:island, :name, :nickname, :friend_code, :dodo_code)
+    params.require(:player).permit(:island, :name, :nickname, :friend_code,
+                                   :dodo_code)
   end
 end

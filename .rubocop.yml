@@ -1,7 +1,16 @@
 require: rubocop-rails
 
 Layout/LineLength:
-  Enabled: false
+  Exclude:
+    - Gemfile
+    - Rakefile
+    - db/**/*
+    - config/**/*
+
+Metrics/MethodLength:
+  ExcludedMethods:
+    - create
+    - update
 
 Style/Documentation:
   Enabled: false
