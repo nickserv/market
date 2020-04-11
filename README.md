@@ -4,25 +4,32 @@
 
 Trading service for [Animal Crossing: New Horizons](https://www.animal-crossing.com/new-horizons/)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Status
 
-Things you may want to cover:
+The [MVP](https://github.com/nickmccurdy/market/milestone/1) is being developed, and the current `master` branch is autodeployed. UX and DB designs are in progress.
 
-* Ruby version
+## Stack
 
-* System dependencies
+Ruby on Rails. A single-page React frontend may be implemented in the future depending on the complexity and performance of the UI.
 
-* Configuration
+## Setup
 
-* Database creation
+1. Install Ruby 2.6.3, Node, Yarn, and PostgreSQL
+1. `bundle`
+1. `yarn`
+1. `rake db:create db:migrate`
+1. `rails server`
 
-* Database initialization
+## Testing
 
-* How to run the test suite
+For linting and faster tests:
 
-* Services (job queues, cache servers, search engines, etc.)
+`rake`
 
-* Deployment instructions
+For slower system tests:
 
-* ...
+`rake test:system`
+
+## Deployment
+
+This Rails app is designed to be deployed on Heroku's default Ruby buildpack. `master` will be auto-deployed, but you can also host your own fork with the free tier.
