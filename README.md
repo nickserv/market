@@ -1,6 +1,6 @@
 # [New Horizons Market](https://nhmarket.herokuapp.com/)
 
-[![Build Status](https://travis-ci.com/nickmccurdy/market.svg?token=2YpiqRLGxdsv1ho7eXeu&branch=master)](https://travis-ci.com/nickmccurdy/market)
+[![Build Status](https://travis-ci.com/nickmccurdy/market.svg?branch=master)](https://travis-ci.com/nickmccurdy/market)
 
 Trading service for [Animal Crossing: New Horizons](https://www.animal-crossing.com/new-horizons/)
 
