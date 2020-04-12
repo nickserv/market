@@ -4,10 +4,6 @@
 
 Trading service for [Animal Crossing: New Horizons](https://www.animal-crossing.com/new-horizons/)
 
-## Status
-
-The [MVP](https://github.com/nickmccurdy/market/milestone/1) is being developed, and the current `master` branch is autodeployed. UX and DB designs are in progress.
-
 ## Stack
 
 Ruby on Rails. A single-page React frontend may be implemented in the future depending on the complexity and performance of the UI.
