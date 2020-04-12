@@ -4,6 +4,10 @@
 
 Trading service for [Animal Crossing: New Horizons](https://www.animal-crossing.com/new-horizons/)
 
+## Status
+
+Development stopped, use [Nookazon.com](https://nookazon.com/) instead.
+
 ## Stack
 
 Ruby on Rails. A single-page React frontend may be implemented in the future depending on the complexity and performance of the UI.
